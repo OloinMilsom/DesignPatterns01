@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bridge.cpp">
+    <ClCompile Include="Proxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

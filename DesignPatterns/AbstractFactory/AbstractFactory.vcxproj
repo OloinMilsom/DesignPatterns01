@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bridge.cpp" />
+    <ClCompile Include="Proxy.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{23158DC8-0FB3-4408-B438-F65D079AAB28}</ProjectGuid>

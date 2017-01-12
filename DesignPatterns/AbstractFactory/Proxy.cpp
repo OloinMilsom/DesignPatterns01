@@ -4,6 +4,12 @@ using namespace std;
 
 class IGraphic {
 public:
+	IGraphic() {
+	}
+
+	~IGraphic() {
+	}
+
 	virtual void Draw() = 0;
 };
 
@@ -49,9 +55,11 @@ private:
 };
 
 int main(void) {
-	GraphicProxy gp;
-	gp.Draw();
-	system("PAUSE");
+	while (true) {
+		GraphicProxy gp;
+		gp.Draw();
+		
+	}system("PAUSE");
 }
 
 

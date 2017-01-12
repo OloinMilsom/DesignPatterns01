@@ -16,6 +16,7 @@ public:
 		cout << "Draw Player" << endl;
 	}
 };
+
 class Boss : public Character {
 public:
 	void draw() {
