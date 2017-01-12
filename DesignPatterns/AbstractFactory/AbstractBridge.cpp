@@ -21,6 +21,7 @@ public:
 
 class Player : public Character {
 public:
+	~Player() { delete api; }
 	Player(DrawAPI* api) { this->api = api; }
 	void Draw() { api->Draw(); }
 private:
@@ -31,5 +32,7 @@ int main(void) {
 	DrawAPI* api = new DrawImpl();
 	Character* character = new Player(api);
 	character->Draw();
+	delete api;
+	delete character;
 	cin.get();
 }

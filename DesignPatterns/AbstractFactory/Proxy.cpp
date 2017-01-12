@@ -55,11 +55,9 @@ private:
 };
 
 int main(void) {
-	while (true) {
-		GraphicProxy gp;
-		gp.Draw();
-		
-	}system("PAUSE");
+	GraphicProxy gp;
+	gp.Draw();
+	system("PAUSE");
 }
 
 

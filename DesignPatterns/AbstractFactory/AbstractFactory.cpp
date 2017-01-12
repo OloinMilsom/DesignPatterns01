@@ -12,6 +12,7 @@ public:
 
 class Player : public Character {
 public:
+	~Player() {};
 	void draw() {
 		cout << "Draw Player" << endl;
 	}
@@ -19,6 +20,7 @@ public:
 
 class Boss : public Character {
 public:
+	~Boss() {};
 	void draw() {
 		cout << "Draw Boss" << endl;
 	}
@@ -26,12 +28,14 @@ public:
 
 class Factory {
 public:
+	~Factory() {};
 	virtual Character* CreatePlayer() = 0;
 	virtual Character* CreateOpponents() = 0;
 };
 
 class CharacterFactory : public Factory {
 public:
+	~CharacterFactory() {};
 	Character* CreatePlayer() {
 		return new Player;
 	}
